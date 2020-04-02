@@ -1,8 +1,10 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">微信端终于成功啦终于成功啦</text>
+	<view>
+		<!-- 图标演示 -->
+		<!-- <text class="iconfont icon-smile" style="font-size: 100rpx; color: red;"></text> -->
+		<!-- 动画使用方式一：点击效果 -->
+		<view class="animated" hover-class="fadeIn" style="border: 1rpx solid #333333; padding: 20rpx;">
+			点击效果1111111
 		</view>
 	</view>
 </template>
@@ -11,7 +13,6 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
 			}
 		},
 		onLoad() {
@@ -24,29 +25,4 @@
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
 </style>
